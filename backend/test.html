@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>📞 Test d'inscription - Djassa Virtuel</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      padding: 30px;
+      background: #f4f6f9;
+      color: #333;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #007A3D;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 500;
+      color: #444;
+    }
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      background: #E76F00;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #d55e00;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📤 Test d’Inscription</h1>
+    <p><small>Remplissez le formulaire pour tester l’API Djassa Virtuel</small></p>
+
+    <form action="http://localhost:5000/api/register" method="post" enctype="multipart/form-data">
+      <!-- Numéro de téléphone -->
+      <label>📞 Numéro de téléphone</label>
+      <input type="tel" name="phone" placeholder="Ex: 07080900" required />
+
+      <!-- Numéro de pièce d'identité -->
+      <label>📄 Numéro de pièce (CNI, passeport...)</label>
+      <input type="text" name="idNumber" placeholder="Ex: CI123456" required />
+
+      <!-- Rôle -->
+      <label>👤 Rôle</label>
+      <select name="role" required>
+        <option value="acheteur">Acheteur</option>
+        <option value="vendeur">Vendeur</option>
+        <option value="prestataire">Prestataire</option>
+      </select>
+
+      <!-- Photo recto -->
+      <label>📸 Photo recto de la pièce</label>
+      <input type="file" name="idFront" accept="image/*" capture="environment" required />
+
+      <!-- Photo verso -->
+      <label>🖼️ Photo verso de la pièce</label>
+      <input type="file" name="idBack" accept="image/*" capture="environment" required />
+
+      <!-- Bouton soumettre -->
+      <button type="submit">✅ Envoyer l’inscription</button>
+    </form>
+  </div>
+</body>
+</html>
