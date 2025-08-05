@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/djassa-virtuel/static/css/main.f855e6bc.css",
+    "main.js": "/djassa-virtuel/static/js/main.7acbd586.js",
+    "static/js/488.e58e798f.chunk.js": "/djassa-virtuel/static/js/488.e58e798f.chunk.js",
+    "index.html": "/djassa-virtuel/index.html",
+    "main.f855e6bc.css.map": "/djassa-virtuel/static/css/main.f855e6bc.css.map",
+    "main.7acbd586.js.map": "/djassa-virtuel/static/js/main.7acbd586.js.map",
+    "488.e58e798f.chunk.js.map": "/djassa-virtuel/static/js/488.e58e798f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.7acbd586.js"
+  ]
+}
